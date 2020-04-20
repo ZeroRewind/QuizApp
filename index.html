@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top">
+        <div>
+            <h1>Dragonball Z Quiz</h1>
+            <h4 class="correct-incorrect hidden">0 Correct/0 Incorrect.</h4>
+            <h4 class="question-count hidden">Question: 0/10</h4>
+        </div>        
+    </header>
+
+    <section>
+        <div class="initial i0">
+            <h2>Are you ready?</h2>
+            <button type="submit" class="start s0">BEGIN</button>
+        </div>
+
+        <div class="initial pass none">
+            
+        </div>
+
+        <div class="initial fail none">
+            
+        </div>
+
+        <div class="initial correct none">
+            <h3>Your answer is correct!</h3>
+            <button type="submit" class="start c1">CONTINUE</button>
+        </div>
+
+        <div class="initial incorrect none">
+            <h3>Your answer is incorrect.</h3>
+            <button type="submit" class="start c1">CONTINUE</button>
+        </div>
+
+        <div class="initial q1 none">
+            <h2>Question 1: During the Saiyan Saga, how does Goku reach King Kai’s planet?</h2>
+            <form action="">
+                <input type="radio" id="q11" name="answer" value="1" required>
+                <label for="q11">By making a wish with the Dragonballs</label><br>
+                <input type="radio" id="q12" name="answer" value="2" required>
+                <label for="q12">Via high speed vehicle</label><br>
+                <input type="radio" id="q13" name="answer" value="3" required>
+                <label for="q13">By traveling along Snake way</label><br>
+                <input type="radio" id="q14" name="answer" value="4" required>
+                <label for="q14">By teleporting there instantly</label><br><br>
+                <button type="submit" class="start s1">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q2 none">
+            <h2>Question 2: What item is used to restore a wounded Z fighter to full health?</h2>
+            <form action="">
+                <input type="radio" id="q21" name="answer" value="1">
+                <label for="q21">Z Sword</label><br>
+                <input type="radio" id="q22" name="answer" value="2">
+                <label for="q22">Saiyan hair</label><br>
+                <input type="radio" id="q23" name="answer" value="3">
+                <label for="q23">Capsule Corp Meds</label><br>
+                <input type="radio" id="q24" name="answer" value="4">
+                <label for="q24">Senzu Bean</label><br><br>
+                <button type="submit" class="start s2">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q3 none">
+            <h2>Question 3: What’s the higher SSJ level reached by Vegeta in Z?</h2>
+            <form action="">
+                <input type="radio" id="q31" name="answer" value="1">
+                <label for="q31">SSJ1</label><br>
+                <input type="radio" id="q32" name="answer" value="2">
+                <label for="q32">SSJ2</label><br>
+                <input type="radio" id="q33" name="answer" value="3">
+                <label for="q33">SSJ3</label><br>
+                <input type="radio" id="q34" name="answer" value="4">
+                <label for="q34">SSJ4</label><br><br>
+                <button type="submit" class="start s3">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q4 none">
+            <h2>Question 4: What does a Scouter do?</h2>
+            <form action="">
+                <input type="radio" id="q41" name="answer" value="1">
+                <label for="q41">Robs the opponent of half his strength</label><br>
+                <input type="radio" id="q42" name="answer" value="2">
+                <label for="q42">Gives the wearer extra power</label><br>
+                <input type="radio" id="q43" name="answer" value="3">
+                <label for="q43">Reveals the power level of an opponent</label><br>
+                <input type="radio" id="q44" name="answer" value="4">
+                <label for="q44">Reveals the power level of the wearer</label><br><br>
+                <button type="submit" class="start s4">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q5 none">
+            <h2>Question 5: What’s Goku’s wife’s name?</h2>
+            <form action="">
+                <input type="radio" id="q51" name="answer" value="1">
+                <label for="q51">Chi Chi</label><br>
+                <input type="radio" id="q52" name="answer" value="2">
+                <label for="q52">Cho Chu</label><br>
+                <input type="radio" id="q53" name="answer" value="3">
+                <label for="q53">Che Chi</label><br>
+                <input type="radio" id="q54" name="answer" value="4">
+                <label for="q54">Cha Cho</label><br><br>
+                <button type="submit" class="start s5">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q6 none">
+            <h2>Question 6: Who does Captain Ginyu serve?</h2>
+            <form action="">
+                <input type="radio" id="q61" name="answer" value="1">
+                <label for="q61">Cell</label><br>
+                <input type="radio" id="q62" name="answer" value="2">
+                <label for="q62">Frieza</label><br>
+                <input type="radio" id="q63" name="answer" value="3">
+                <label for="q63">Broly</label><br>
+                <input type="radio" id="q64" name="answer" value="4">
+                <label for="q64">Majin Buu</label><br><br>
+                <button type="submit" class="start s6">CHECK ANSWER</button>
+            </form>
+        </div>
+
+
+        <div class="initial q7 none">
+            <h2>Question 7: Where does Goku transform into SSJ for the first time?</h2>
+            <form action="">
+                <input type="radio" id="q71" name="answer" value="1">
+                <label for="q71">Earth</label><br>
+                <input type="radio" id="q72" name="answer" value="2">
+                <label for="q72">Namek</label><br>
+                <input type="radio" id="q73" name="answer" value="3">
+                <label for="q73">Otherworld</label><br>
+                <input type="radio" id="q74" name="answer" value="4">
+                <label for="q74">Mars</label><br><br>
+                <button type="submit" class="start s7">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q8 none">
+            <h2>Question 8: What are the names of King Kai's little buddies?</h2>
+            <form action="">
+                <input type="radio" id="q81" name="answer" value="1">
+                <label for="q81">Bubbles and Gregory</label><br>
+                <input type="radio" id="q82" name="answer" value="2">
+                <label for="q82">Bobo and John</label><br>
+                <input type="radio" id="q83" name="answer" value="3">
+                <label for="q83">Bernie and Jim</label><br>
+                <input type="radio" id="q84" name="answer" value="4">
+                <label for="q84">Bonobo and Garrett</label><br><br>
+                <button type="submit" class="start s8">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q9 none">
+            <h2>Question 9: Why does Vegeta allow himself to be controlled by Babidi?</h2>
+            <form action="">
+                <input type="radio" id="q91" name="answer" value="1">
+                <label for="q91">To win the Tournament</label><br>
+                <input type="radio" id="q92" name="answer" value="2">
+                <label for="q92">To fight Dabura</label><br>
+                <input type="radio" id="q93" name="answer" value="3">
+                <label for="q93">To discover Babidi's plan</label><br>
+                <input type="radio" id="q94" name="answer" value="4">
+                <label for="q94">To fight Goku</label><br><br>
+                <button type="submit" class="start s9">CHECK ANSWER</button>
+            </form>
+        </div>
+
+        <div class="initial q10 none">
+            <h2>Question 10: Which Saga features the Saibamen?</h2>
+            <form action="">
+                <input type="radio" id="q101" name="answer" value="1">
+                <label for="q101">Cell Saga</label><br>
+                <input type="radio" id="q102" name="answer" value="2">
+                <label for="q102">Namek Saga</label><br>
+                <input type="radio" id="q103" name="answer" value="3">
+                <label for="q103">Buu Saga</label><br>
+                <input type="radio" id="q104" name="answer" value="4">
+                <label for="q104">Saiyan Saga</label><br><br>
+                <button type="submit" class="start s10">CHECK ANSWER</button>
+            </form>
+        </div>
+     
+
+    </section>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
