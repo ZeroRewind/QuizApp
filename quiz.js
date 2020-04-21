@@ -1,10 +1,11 @@
-// Correct Answers
+//Correct, incorrect answer counts and counter
 var numberOfCorrect = 0;
 var numberOfIncorrect = 0;
 var questionCounter = 0;
 
-var correct = ["q13", "q24", "q32", "q43", "q51", "q62", "q72", "q81", "q94", "q104"];
+// Correct IDs Answers
 
+var correct = ["q13", "q24", "q32", "q43", "q51", "q62", "q72", "q81", "q94", "q104"];
 var correctAnswers =[
  "By traveling along Snake way", "Senzu Bean", "SSJ2",
  "Reveals the power level of an opponent", "Chi Chi",
@@ -26,8 +27,10 @@ $(".s0").on("click", function(){
 for(let i=1; i<11; i++){
        
     $(".f"+i).on("submit", function(event){
-        event.preventDefault();
+        event.preventDefault(); //No page refresh
 
+
+        // Correct Answer
         if ($("input[id="+correct[i-1]+"]:checked").length > 0) {
             
 
@@ -48,9 +51,10 @@ for(let i=1; i<11; i++){
 
             $(".question-count").text("Question: "+questionCounter+"/10");
             $(".correct-incorrect").text(numberOfCorrect+" Correct/"+numberOfIncorrect+" Incorrect.");
-            // console.log("yes");
+    
         }
         
+        // Wrong Answer
         else{        
 
             $(".q"+i).addClass("none");
@@ -71,10 +75,10 @@ for(let i=1; i<11; i++){
 
             $(".question-count").text("Question: "+questionCounter+"/10");
             $(".correct-incorrect").text(numberOfCorrect+" Correct/"+numberOfIncorrect+" Incorrect.");
-            // console.log("no");
+           
         }   
         
-        
+        // Pass or fail handler
         $(".c1").on("click",function(){
             if(questionCounter === 10){
 
