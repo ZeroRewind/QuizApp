@@ -12,14 +12,6 @@ var correctAnswers =[
  "To fight Goku", "Saiyan Saga"
 ];
 
-var allIds =[
-"q11", "q12", "q13", "q14", "q21", "q22", "q23", "q24",
-"q31", "q32", "q33", "q34", "q41", "q42", "q43", "q44",
-"q51", "q52", "q53", "q54", "q61", "q62", "q63", "q64",
-"q71", "q72", "q73", "q74", "q81", "q82", "q83", "q84",
-"q91", "q92", "q93", "q94", "q101", "q102", "q103", "q104",
-];
-
 // Initiation
 
 $(".s0").on("click", function(){
